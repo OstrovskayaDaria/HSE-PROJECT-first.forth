@@ -1,0 +1,413 @@
+@import "reset.css";
+
+body {
+  color: #000;
+
+  font-family: Helvetica;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.first {
+  position: relative;
+
+  display: flex;
+
+  height: 100vh;
+  min-height: 400px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  left: 0px;
+
+  width: 960px;
+  height: 40px;
+  margin: 0 auto;
+
+  background-color: rgb(0 93 221);
+}
+
+nav ul {
+  display: flex;
+
+  padding: 12px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  font-size: 16px;
+
+  justify-content: space-between;
+}
+
+
+nav a {
+  text-decoration: none;
+
+  color: #fff;
+}
+
+nav a:hover {
+  color: #000000;
+
+}
+
+.input {
+  width: 50px;
+  margin-top: -5px;
+  padding: 0;
+
+  color: #fff;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+nav ul li {
+  position: relative;
+
+  float: left;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+
+  display: none;
+
+  width: 277px;
+  margin-left: -12px;
+
+  background: rgb(0 93 221);
+}
+
+ li:hover .dropdown{
+  display: block;
+ }
+
+ .dropdown li{
+  width: 100%;
+  height: 45px;
+ }
+
+.dropdown li a{
+  height: 45px;
+
+  line-height: 45px;
+}
+
+.displayContainer {
+  width: 728px;
+  margin: 10px auto 0;
+}
+
+
+h1, h2, h3, p, .centerizer {
+  width: 728px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: -600px;
+  margin-bottom: 30px;
+  margin-left: 500px;
+
+  font-size: 50px;
+  line-height: 50px;
+}
+h2 {
+  margin-top: 10px;
+
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h3 {
+  margin-top: 36px;
+
+  font-size: 28px;
+  line-height: 34px;
+}
+h4 {
+  margin-top: 36px;
+  margin-left: 338px;
+
+  font-size: 28px;
+  line-height: 34px;
+}
+p {
+  margin-top: 200px;
+
+  font-size: 22px;
+  line-height: 34px;
+}
+
+p + p {
+  margin-top: 29px;
+
+  line-height: 10px;
+}
+
+
+
+
+.slider {
+  position: relative;
+
+  width: 680px;
+  margin: 50px auto;
+
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.switch label {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+
+  cursor: pointer;
+
+  border: 5px solid #2f363c;
+  border-radius: 50%;
+  background-color: #738290;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+
+.slider-inner {
+  overflow: hidden;
+
+}
+
+.slides {
+  width: 300%;
+
+  transition: all 0.5s;
+}
+
+.slides img {
+  float: left;
+
+  width: 340px;
+  height: 400px;
+}
+
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}
+.first1{
+  width: 550px;
+  margin-top: -100px;
+  margin-bottom: 150px;
+  margin-left: 380px;
+
+  color: #000000;
+
+  font-family: "Helvetica", sans-serif;
+  font-size: 50px;
+  line-height: 200px;
+
+  align-content: center;
+}
+.slider2 {
+  position: relative;
+
+  width: 680px;
+  margin: 50px auto;
+
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider2 input[name="switch"] {
+  display: none;
+}
+
+.switch2 {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.switch2 label {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+
+  cursor: pointer;
+
+  border: 5px solid #2f363c;
+  border-radius: 50%;
+  background-color: #738290;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+#btn3:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn4:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+
+.slider-inner2 {
+  overflow: hidden;
+
+}
+
+.slides2 {
+  width: 300%;
+
+  transition: all 0.5s;
+}
+
+.slides2 img {
+  float: left;
+
+  width: 340px;
+  height: 400px;
+}
+
+#btn3:checked~slider-inner2 .slides2 {
+  transform: translate(0);
+}
+
+#btn4:checked~.slider-inner2 .slides2 {
+  transform: translate(-680px);
+}
+
+.first2 {
+  width: 550px;
+  margin-top: -100px;
+  margin-bottom: 150px;
+  margin-left: 380px;
+
+  color: #000000;
+
+  font-family: "Helvetica", sans-serif;
+  font-size: 50px;
+  line-height: 200px;
+
+  align-content: center;
+}
+.slider3 {
+  position: relative;
+
+  width: 680px;
+  margin: 50px auto;
+
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider3 input[name="switch"] {
+  display: none;
+}
+
+.switch3 {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.switch3 label {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+
+  cursor: pointer;
+
+  border: 5px solid #2f363c;
+  border-radius: 50%;
+  background-color: #738290;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+#btn5:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn6:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+
+.slider-inner3 {
+  overflow: hidden;
+
+}
+
+.slides3 {
+  width: 300%;
+
+  transition: all 0.5s;
+}
+
+.slides3 img {
+  float: left;
+
+  width: 340px;
+  height: 400px;
+}
+
+#btn5:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn6:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}

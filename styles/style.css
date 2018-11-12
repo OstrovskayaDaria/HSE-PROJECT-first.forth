@@ -635,11 +635,11 @@ p + p {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
 }
 
-#btn10:checked~.switch6 label[for="btn10"] {
+#btn11:checked~.switch6 label[for="btn10"] {
   background-color: white;
 }
 
-#btn11:checked~.switch6 label[for="btn11"] {
+#btn12:checked~.switch6 label[for="btn11"] {
   background-color: white;
 }
 
@@ -662,11 +662,11 @@ p + p {
   height: 400px;
 }
 
-#btn10:checked~slider-inner6 .slides6 {
+#btn11:checked~slider-inner6 .slides6 {
   transform: translate(0);
 }
 
-#btn11:checked~.slider-inner6 .slides6 {
+#btn12:checked~.slider-inner6 .slides6 {
   transform: translate(-680px);
 }
 .first6 {
@@ -721,11 +721,11 @@ p + p {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
 }
 
-#btn12:checked~.switch7 label[for="btn10"] {
+#btn13:checked~.switch7 label[for="btn10"] {
   background-color: white;
 }
 
-#btn13:checked~.switch7 label[for="btn11"] {
+#btn14:checked~.switch7 label[for="btn11"] {
   background-color: white;
 }
 
@@ -756,6 +756,92 @@ p + p {
   transform: translate(-680px);
 }
 .first7 {
+  width: 550px;
+  margin-top: -100px;
+  margin-bottom: 150px;
+  margin-left: 380px;
+
+  color: #000000;
+
+  font-family: "Helvetica", sans-serif;
+  font-size: 50px;
+  line-height: 200px;
+
+  align-content: center;
+}
+.slider8 {
+  position: relative;
+
+  width: 680px;
+  margin: 50px auto;
+
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider8 input[name="switch8"] {
+  display: none;
+}
+
+.switch8 {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.switch8 label {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+
+  cursor: pointer;
+
+  border: 5px solid #2f363c;
+  border-radius: 50%;
+  background-color: #738290;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+#btn15:checked~.switch8 label[for="btn10"] {
+  background-color: white;
+}
+
+#btn16:checked~.switch8 label[for="btn11"] {
+  background-color: white;
+}
+
+
+.slider-inner8 {
+  overflow: hidden;
+
+}
+
+.slides8 {
+  width: 300%;
+
+  transition: all 0.5s;
+}
+
+.slides8 img {
+  float: left;
+
+  width: 340px;
+  height: 400px;
+}
+
+#btn15:checked~slider-inner8 .slides8 {
+  transform: translate(0);
+}
+
+#btn16:checked~.slider-inner8 .slides8 {
+  transform: translate(-680px);
+}
+.first8 {
   width: 550px;
   margin-top: -100px;
   margin-bottom: 150px;
